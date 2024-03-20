@@ -1,0 +1,16 @@
+def is_even(num):
+    return num & 1 == 0
+
+def is_odd(num):
+    return not is_even(num)
+
+def main():
+    num = int(input("Enter an integer: "))
+    
+    even_odd = {True: "even", False: "odd"}
+    result = even_odd[is_even(num)]
+    
+    print(result)
+
+if __name__ == "__main__":
+    main()
